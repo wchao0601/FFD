@@ -127,10 +127,12 @@ python tools/test.py
 If this work is helpful for your research, please consider citing:
 
 ```bibtex
-@article{wang2026topnet,
-  title={FFD: Task-oriented Prior Adapter of Vision Foundation Models for Optical-SAR Fusion Detection},
-  author={Wang, Chao and Yu, Zhenbo and Sun, Yanguang and Yang, Jian and Luo, Lei},
-  year={2026}
+@inproceedings{wang2026m4,
+author={Wang, Chao and Lu, Wei and Li, Xiang and Yang, Jian and Luo, Lei},
+title={M4-SAR: A Multi-resolution, Multi-polarization, Multi-scene, Multi-source Dataset and Benchmark for Optical-SAR Object Detection},
+booktitle={Proc. Eur. Conf. Comput. Vis.},
+pages={538--556},
+year={2026}
 }
 ```
 
