@@ -24,7 +24,7 @@ Vision foundation models provide strong general representations, but they are no
 
 ## Framework
 
-![FFD framework](https://github.com/wchao0601/FFD/blob/main/network.png)
+![FFD framework](https://github.com/wchao0601/FFD/blob/main/Network.png)
 
 FFD follows a two-stage design:
 
@@ -32,7 +32,7 @@ FFD follows a two-stage design:
 2. **VFM adaptation and fusion.** A frozen VFM extracts general optical/SAR features. TPLM priors are injected via TPGM, then optical and SAR features are fused by MBFM and sent to an oriented bounding box detection head.
 
 ## Method
-![Task-oriented Prior Adapter](https://github.com/wchao0601/FFD/blob/main/adapter.png)
+![Task-oriented Prior Adapter](https://github.com/wchao0601/FFD/blob/main/TPLM.png)
 ### Task-Prior Learning Module
 
 **TPLM** serves as a task-specific knowledge carrier for OSFD. It contains:
@@ -43,10 +43,12 @@ FFD follows a two-stage design:
 - **MKEM: Multi-scale Knowledge Enhancement Module**  
   Decouples feature channels into heterogeneous branches for point, local, medium-range, and global attention, improving perception of objects with large-scale variation and irregular shapes.
 
+![Task-oriented Prior Adapter](https://github.com/wchao0601/FFD/blob/main/TPGM.png)
 ### Task-Prior Guidance Mechanism
 
 **TPGM** adaptively injects task-specific priors into VFM features. This prevents physical/spatial priors from overwhelming the general representation learned by the foundation model.
 
+![Task-oriented Prior Adapter](https://github.com/wchao0601/FFD/blob/main/MBFM.png)
 ### Modality-Balanced Fusion Module
 
 **MBFM** learns to balance optical texture/color cues and SAR structural cues, producing discriminative fused features for oriented object detection.
